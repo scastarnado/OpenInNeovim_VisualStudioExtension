@@ -4,8 +4,8 @@ A Visual Studio 2026 extension that opens selected files and folders in a new Ne
 
 ## Install and use
 
-1. Build the solution in Release configuration.
-2. Double-click `OpenInNeovim/bin/Release/net472/OpenInNeovim.vsix` and follow the VSIX installer. Close Visual Studio if prompted, then restart it.
+1. [Download OpenInNeovim.vsix](https://github.com/scastarnado/OpenInNeovim_VisualStudioExtension/releases/latest/download/OpenInNeovim.vsix) from the [latest release](https://github.com/scastarnado/OpenInNeovim_VisualStudioExtension/releases/latest). No build is required.
+2. Double-click the downloaded `OpenInNeovim.vsix` and follow the VSIX installer. Close Visual Studio if prompted, then restart it.
 3. Right-click a file, physical folder, project, or solution in Solution Explorer and choose **Open in NeoVim**. You can also right-click inside the code editor to open its current file.
 
 Files open directly. Projects and solutions open their containing directory, using Neovim's directory browser. Multiple selected items open separate windows. Virtual nodes without a physical path (such as references and virtual solution folders) do not offer the command. Unsaved editor changes are not automatically saved; Neovim reads the file on disk.
