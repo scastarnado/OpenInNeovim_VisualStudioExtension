@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="OpenInNeovim.430e78d6-124a-4d8e-9c05-3c1c6c877ec3" Version="1.0.0" Language="en-US" Publisher="OpenInNeovim" />
+    <Identity Id="OpenInNeovim.430e78d6-124a-4d8e-9c05-3c1c6c877ec3" Version="1.0.0" Language="en-US" Publisher="scastarnado" />
     <DisplayName>Open in NeoVim</DisplayName>
     <Description xml:space="preserve">Open files, folders, projects, and solutions in a new Neovim window.</Description>
   </Metadata>
