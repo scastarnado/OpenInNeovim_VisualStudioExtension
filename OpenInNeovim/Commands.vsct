@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+  <Extern href="stdidcmd.h" /><Extern href="vsshlids.h" />
+  <Commands package="guidPackage">
+    <Groups>
+      <Group guid="guidCommands" id="group0" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" /></Group>
+      <Group guid="guidCommands" id="group1" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" /></Group>
+      <Group guid="guidCommands" id="group2" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" /></Group>
+      <Group guid="guidCommands" id="group3" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" /></Group>
+      <Group guid="guidCommands" id="group4" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNFOLDER" /></Group>
+      <Group guid="guidCommands" id="group5" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIITEM" /></Group>
+      <Group guid="guidCommands" id="group6" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJ" /></Group>
+      <Group guid="guidCommands" id="editorGroup" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN" /></Group>
+    </Groups>
+    <Buttons>
+      <Button guid="guidCommands" id="OpenSelection" priority="0x0100" type="Button">
+        <Parent guid="guidCommands" id="group0" /><CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings><ButtonText>Open in NeoVim</ButtonText></Strings>
+      </Button>
+      <Button guid="guidCommands" id="OpenEditor" priority="0x0100" type="Button">
+        <Parent guid="guidCommands" id="editorGroup" /><CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings><ButtonText>Open in NeoVim</ButtonText></Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+  <CommandPlacements>
+    <CommandPlacement guid="guidCommands" id="OpenSelection" priority="0x0100"><Parent guid="guidCommands" id="group1" /></CommandPlacement>
+    <CommandPlacement guid="guidCommands" id="OpenSelection" priority="0x0100"><Parent guid="guidCommands" id="group2" /></CommandPlacement>
+    <CommandPlacement guid="guidCommands" id="OpenSelection" priority="0x0100"><Parent guid="guidCommands" id="group3" /></CommandPlacement>
+    <CommandPlacement guid="guidCommands" id="OpenSelection" priority="0x0100"><Parent guid="guidCommands" id="group4" /></CommandPlacement>
+    <CommandPlacement guid="guidCommands" id="OpenSelection" priority="0x0100"><Parent guid="guidCommands" id="group5" /></CommandPlacement>
+    <CommandPlacement guid="guidCommands" id="OpenSelection" priority="0x0100"><Parent guid="guidCommands" id="group6" /></CommandPlacement>
+  </CommandPlacements>
+  <Symbols>
+    <GuidSymbol name="guidPackage" value="{430e78d6-124a-4d8e-9c05-3c1c6c877ec3}" />
+    <GuidSymbol name="guidCommands" value="{5710f306-2fa0-433e-b239-fd01263fb712}">
+      <IDSymbol name="OpenSelection" value="0x0100" /><IDSymbol name="OpenEditor" value="0x0101" />
+      <IDSymbol name="group0" value="0x1020" />
+      <IDSymbol name="group1" value="0x1021" />
+      <IDSymbol name="group2" value="0x1022" />
+      <IDSymbol name="group3" value="0x1023" />
+      <IDSymbol name="group4" value="0x1024" />
+      <IDSymbol name="group5" value="0x1025" />
+      <IDSymbol name="group6" value="0x1026" />
+      <IDSymbol name="editorGroup" value="0x1030" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
